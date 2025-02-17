@@ -1,0 +1,42 @@
+body {
+    color: black;
+    font-family:Arial;
+    text-align: center;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #83acdc;
+    padding: 5px;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+.categories {
+    text-align: left;
+}
+
+button {
+    font-family:Arial;
+    background-color: #83acdc;
+    border: 2px solid;
+    margin-left: 2px;
+    margin-right: 2px;
+    float: left;
+}
+
+#myChart {
+    display: inline-block;
+    margin: 0 auto;
+}

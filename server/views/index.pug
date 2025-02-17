@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+ head
+   title Expense Tracker - Homepage
+   style 
+      include ./style.css
+   div
+      a(href="http://localhost:8081/"): button(type="button") Home - Transactions
+      a(href="http://localhost:8081/categorization"): button(type="button") Spending Categories
+ body
+   hr
+   h1 Expense Tracker - Homepage
+   div
+     h2 Your Transactions: 
+     h2=userFileName
+     table
+      tr
+         th Date 
+         th Description 
+         th Amount 
+         th Category 
+      each val in queryResults 
+         tr 
+            td=val.date
+            td=val.description 
+            td=val.amount 
+            td=val.category
